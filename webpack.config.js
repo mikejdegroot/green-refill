@@ -13,7 +13,8 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'src/index.html', to: '' }
+        { from: 'src/index.html', to: '' },
+        { from: 'src/img', to: 'img'}
       ]
     }),
     new MiniCssExtractPlugin({
@@ -36,29 +37,30 @@ module.exports = {
   ],
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   use: {
-      //     loader: 'babel-loader',
-      //     options: { presets: ['es2015'] }
-      //   }
-      // },
       {
-          test: /\.scss$/,
-          use: [
-              'style-loader',
-              MiniCssExtractPlugin.loader,
-              {
-                  loader: "css-loader",
-                  options: {
-                      // minimize: true,
-                      // sourceMap: true
-                  }
-              },
-              {
-                  loader: "sass-loader"
-              }
-          ]
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              // minimize: true,
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
       },
     ]
   }
