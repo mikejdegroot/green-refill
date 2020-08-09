@@ -1,0 +1,26 @@
+{
+  "name": "green-refill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikejdegroot/green-refill.git"
+  },
+  "author": "mike de groot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikejdegroot/green-refill/issues"
+  },
+  "homepage": "https://github.com/mikejdegroot/green-refill#readme",
+  "dependencies": {
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1"
+  }
+}
