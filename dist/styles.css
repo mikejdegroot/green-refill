@@ -1,3 +1,7 @@
+* {
+  font-family: "Baloo Tamma 2", cursive;
+}
+
 .hero {
   background-image: url(eaea3973a5ac46cba5837affbd943788.jpg);
   height: 100vh;
@@ -9,11 +13,23 @@
 }
 
 .content {
-  height: 500px;
-  background-color: white;
-  min-width: 500px;
-  max-width: 60%;
-  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 200px;
+  max-width: 80%;
+  padding: 40px 80px;
+  margin: 60px;
+}
+.content .tags {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+.content .tags img {
+  height: 30px;
+}
+.content p {
+  line-height: 22px;
 }
 
 .shopLogo {
