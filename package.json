@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,22 @@
   },
   "homepage": "https://github.com/mikejdegroot/green-refill#readme",
   "dependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-loader": "^8.0.0-beta.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "copy-webpack-plugin": "^6.0.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass-loader": "^9.0.3",
+    "sass": "^1.22.10",
     "webpack": "^4.44.1"
   },
   "devDependencies": {
     "css-loader": "^4.2.1",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.12"
   }
 }
