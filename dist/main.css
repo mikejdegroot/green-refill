@@ -42,6 +42,12 @@
   line-height: 22px;
   font-size: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .content p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
 .content .socials img {
   height: 25px;
   width: 25px;
@@ -63,7 +69,8 @@
 }
 @media only screen and (max-width: 600px) {
   .content {
-    padding: 20px 30px;
+    padding: 20px 15px;
+    margin: 20px;
   }
 }
 

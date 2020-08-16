@@ -40,6 +40,10 @@ $green: #5E803F;
   p {
     line-height: 22px;
     font-size: 20px;
+    @media only screen and (max-width: 600px) {
+      font-size: 17px;
+      line-height: 20px;
+    }
   }
   .socials {
     img {
@@ -63,7 +67,8 @@ $green: #5E803F;
     color: $green;
   }
   @media only screen and (max-width: 600px) {
-    padding: 20px 30px;
+    padding: 20px 15px;
+    margin: 20px;
   }
 }
 
