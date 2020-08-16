@@ -1,0 +1,74 @@
+* {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.hero {
+  background-image: url(9775c3387f287f1cdb59e512846f6bea.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 200px;
+  max-width: 600px;
+  padding: 40px 80px;
+  margin: 60px;
+}
+.content .tags {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 35px 0;
+}
+@media only screen and (max-width: 600px) {
+  .content .tags {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.content .tags img {
+  height: 20px;
+}
+.content .leadIn {
+  text-align: center;
+}
+.content p {
+  line-height: 22px;
+  font-size: 20px;
+}
+.content .socials img {
+  height: 25px;
+  width: 25px;
+}
+.content .socials img.email {
+  height: 48px;
+  width: 32px;
+  margin-bottom: -11px;
+}
+.content .contact {
+  text-align: center;
+}
+.content .contact a {
+  text-decoration: none;
+  color: #5E803F;
+}
+.content .highlight {
+  color: #5E803F;
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 20px 30px;
+  }
+}
+
+.shopLogo {
+  height: 100px;
+  margin: auto;
+  display: block;
+}

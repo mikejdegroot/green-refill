@@ -20,7 +20,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: 'styles.css',
+      filename: 'styles.css'
       // chunkFilename: '[id].css'
     }),
     new MiniCssExtractPlugin({
@@ -61,7 +61,7 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
-      },
+      }
     ]
   }
 };
