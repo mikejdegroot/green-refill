@@ -38,12 +38,12 @@
 .content .leadIn {
   text-align: center;
 }
-.content p, .content ul > li {
+.content p, .content ul li {
   line-height: 22px;
   font-size: 20px;
 }
 @media only screen and (max-width: 600px) {
-  .content p, .content ul > li {
+  .content p, .content ul li {
     font-size: 17px;
     line-height: 20px;
   }
